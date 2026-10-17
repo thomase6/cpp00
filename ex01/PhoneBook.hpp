@@ -2,18 +2,18 @@
 # define PHONEBOOK_HPP
 
 # include <string>
-# include "contact.hpp"
+# include "Contact.hpp"
 # include <iomanip>
 # include <iostream>
 
-class Phonebook
+class PhoneBook
 {
 private:
 	Contact contacts[8];
 	int	index;
 	int	count;
 public:
-	Phonebook();
+	PhoneBook();
 	void addContact();
 	void searchContact() const;
 };

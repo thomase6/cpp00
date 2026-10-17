@@ -1,11 +1,11 @@
 #include <iostream>
-#include "phonebook.hpp"
+#include "PhoneBook.hpp"
 #include <string>
 
 
 int main()
 {
-	Phonebook test;
+	PhoneBook test;
 	std::string cmd;
 
 	

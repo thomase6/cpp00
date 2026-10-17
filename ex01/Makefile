@@ -3,8 +3,8 @@ NAME = phonebook
 #ingredients 
 
 SRCS = 	main.cpp \
-		contact.cpp \
-		phonebook.cpp
+		Contact.cpp \
+		PhoneBook.cpp
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 ODIR = obj/

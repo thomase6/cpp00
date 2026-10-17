@@ -1,6 +1,6 @@
-# include "phonebook.hpp"
+# include "PhoneBook.hpp"
 
-Phonebook::Phonebook()
+PhoneBook::PhoneBook()
 {
 	index = 0;
 	count = 0;
@@ -29,7 +29,7 @@ static std::string promptField(const std::string &prompt)
 	return input;
 }
 
-void Phonebook::addContact()
+void PhoneBook::addContact()
 {
 	std::string firstName;
 	std::string lastName;
@@ -59,7 +59,7 @@ void Phonebook::addContact()
 		count++;
 }
 
-void Phonebook::searchContact() const
+void PhoneBook::searchContact() const
 {
 	int i;
 	int num;
@@ -68,9 +68,13 @@ void Phonebook::searchContact() const
 	i = 0;
 	if (count == 0)
 	{
-		std::cout << "Phonebook is empty\n";
+		std::cout << "PhoneBook is empty\n";
 		return;
  	}
+	std::cout << std::right << std::setw(10) << "Index";
+	std::cout << '|' << std::setw(10) << "First Name";
+	std::cout << '|' << std::setw(10) << "Last Name";
+	std::cout << '|' << std::setw(10) << "Nickname" << '\n';
 	while (i < count)
 	{
 		std::cout << std::right << std::setw(10) << i;
